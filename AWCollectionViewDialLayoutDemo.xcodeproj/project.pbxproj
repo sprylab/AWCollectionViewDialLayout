@@ -36,6 +36,25 @@
 		71DD223918D879A1005450FA /* dialCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71DD223818D879A1005450FA /* dialCell2.xib */; };
 		71DD223C18D885F3005450FA /* awcollectionviewdiallayout_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 71DD223A18D885F3005450FA /* awcollectionviewdiallayout_1.jpg */; };
 		71DD223D18D885F3005450FA /* awcollectionviewdiallayout_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 71DD223B18D885F3005450FA /* awcollectionviewdiallayout_2.jpg */; };
+		FC15668F1B01E425008C3757 /* dialCell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC15668E1B01E425008C3757 /* dialCell3.xib */; };
+		FC63AA1B1B0B2F0700F5B3B0 /* pages.json in Resources */ = {isa = PBXBuildFile; fileRef = FC63AA1A1B0B2F0700F5B3B0 /* pages.json */; };
+		FC63AA1C1B0B3EF400F5B3B0 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC63AA181B0A0C6E00F5B3B0 /* Roboto-Bold.ttf */; };
+		FC63AA1D1B0B3EFB00F5B3B0 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC63AA191B0A0C8300F5B3B0 /* Roboto-Regular.ttf */; };
+		FC63AA201B0B434300F5B3B0 /* PageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC63AA1F1B0B434200F5B3B0 /* PageCollectionViewCell.m */; };
+		FC63AA2D1B0C7AAC00F5B3B0 /* bg_image.png in Resources */ = {isa = PBXBuildFile; fileRef = FC63AA211B0C7AAC00F5B3B0 /* bg_image.png */; };
+		FC63AA2E1B0C7AAC00F5B3B0 /* bg_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC63AA221B0C7AAC00F5B3B0 /* bg_image@2x.png */; };
+		FC63AA2F1B0C7AAC00F5B3B0 /* content_1.png in Resources */ = {isa = PBXBuildFile; fileRef = FC63AA231B0C7AAC00F5B3B0 /* content_1.png */; };
+		FC63AA301B0C7AAC00F5B3B0 /* content_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC63AA241B0C7AAC00F5B3B0 /* content_1@2x.png */; };
+		FC63AA311B0C7AAC00F5B3B0 /* content_2.png in Resources */ = {isa = PBXBuildFile; fileRef = FC63AA251B0C7AAC00F5B3B0 /* content_2.png */; };
+		FC63AA321B0C7AAC00F5B3B0 /* content_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC63AA261B0C7AAC00F5B3B0 /* content_2@2x.png */; };
+		FC63AA331B0C7AAC00F5B3B0 /* content_3.png in Resources */ = {isa = PBXBuildFile; fileRef = FC63AA271B0C7AAC00F5B3B0 /* content_3.png */; };
+		FC63AA341B0C7AAC00F5B3B0 /* content_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC63AA281B0C7AAC00F5B3B0 /* content_3@2x.png */; };
+		FC63AA351B0C7AAC00F5B3B0 /* content_4.png in Resources */ = {isa = PBXBuildFile; fileRef = FC63AA291B0C7AAC00F5B3B0 /* content_4.png */; };
+		FC63AA361B0C7AAC00F5B3B0 /* content_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC63AA2A1B0C7AAC00F5B3B0 /* content_4@2x.png */; };
+		FC63AA371B0C7AAC00F5B3B0 /* content_5.png in Resources */ = {isa = PBXBuildFile; fileRef = FC63AA2B1B0C7AAC00F5B3B0 /* content_5.png */; };
+		FC63AA381B0C7AAC00F5B3B0 /* content_5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC63AA2C1B0C7AAC00F5B3B0 /* content_5@2x.png */; };
+		FCC7592C1B0CB20B003E79FB /* gradientnew.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC7592A1B0CB20B003E79FB /* gradientnew.png */; };
+		FCC7592D1B0CB20B003E79FB /* gradientnew@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC7592B1B0CB20B003E79FB /* gradientnew@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +103,26 @@
 		71DD223818D879A1005450FA /* dialCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = dialCell2.xib; sourceTree = "<group>"; };
 		71DD223A18D885F3005450FA /* awcollectionviewdiallayout_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = awcollectionviewdiallayout_1.jpg; sourceTree = "<group>"; };
 		71DD223B18D885F3005450FA /* awcollectionviewdiallayout_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = awcollectionviewdiallayout_2.jpg; sourceTree = "<group>"; };
+		FC15668E1B01E425008C3757 /* dialCell3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = dialCell3.xib; sourceTree = "<group>"; };
+		FC63AA181B0A0C6E00F5B3B0 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		FC63AA191B0A0C8300F5B3B0 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		FC63AA1A1B0B2F0700F5B3B0 /* pages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pages.json; sourceTree = "<group>"; };
+		FC63AA1E1B0B434200F5B3B0 /* PageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageCollectionViewCell.h; sourceTree = "<group>"; };
+		FC63AA1F1B0B434200F5B3B0 /* PageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageCollectionViewCell.m; sourceTree = "<group>"; };
+		FC63AA211B0C7AAC00F5B3B0 /* bg_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_image.png; sourceTree = "<group>"; };
+		FC63AA221B0C7AAC00F5B3B0 /* bg_image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_image@2x.png"; sourceTree = "<group>"; };
+		FC63AA231B0C7AAC00F5B3B0 /* content_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = content_1.png; sourceTree = "<group>"; };
+		FC63AA241B0C7AAC00F5B3B0 /* content_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "content_1@2x.png"; sourceTree = "<group>"; };
+		FC63AA251B0C7AAC00F5B3B0 /* content_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = content_2.png; sourceTree = "<group>"; };
+		FC63AA261B0C7AAC00F5B3B0 /* content_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "content_2@2x.png"; sourceTree = "<group>"; };
+		FC63AA271B0C7AAC00F5B3B0 /* content_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = content_3.png; sourceTree = "<group>"; };
+		FC63AA281B0C7AAC00F5B3B0 /* content_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "content_3@2x.png"; sourceTree = "<group>"; };
+		FC63AA291B0C7AAC00F5B3B0 /* content_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = content_4.png; sourceTree = "<group>"; };
+		FC63AA2A1B0C7AAC00F5B3B0 /* content_4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "content_4@2x.png"; sourceTree = "<group>"; };
+		FC63AA2B1B0C7AAC00F5B3B0 /* content_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = content_5.png; sourceTree = "<group>"; };
+		FC63AA2C1B0C7AAC00F5B3B0 /* content_5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "content_5@2x.png"; sourceTree = "<group>"; };
+		FCC7592A1B0CB20B003E79FB /* gradientnew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gradientnew.png; sourceTree = "<group>"; };
+		FCC7592B1B0CB20B003E79FB /* gradientnew@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gradientnew@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +182,7 @@
 		71D04A0D18D3068F0077B38B /* AWCollectionViewDialLayoutDemo */ = {
 			isa = PBXGroup;
 			children = (
+				FC63AA171B0A0C2D00F5B3B0 /* Fonts */,
 				71D04A4718D311340077B38B /* Assets */,
 				71D04A3F18D306930077B38B /* Classes */,
 				71D04A1618D3068F0077B38B /* AppDelegate.h */,
@@ -153,10 +193,14 @@
 				71D04A2018D3068F0077B38B /* ViewController.m */,
 				71D04A4318D309C40077B38B /* dialCell.xib */,
 				71DD223818D879A1005450FA /* dialCell2.xib */,
+				FC15668E1B01E425008C3757 /* dialCell3.xib */,
 				71D04A4518D311190077B38B /* players.json */,
+				FC63AA1A1B0B2F0700F5B3B0 /* pages.json */,
 				71D04A2218D3068F0077B38B /* Images.xcassets */,
 				71D04A0E18D3068F0077B38B /* Supporting Files */,
 				71DD0C6318D3540400152D0C /* iphone_settings_view.xib */,
+				FC63AA1E1B0B434200F5B3B0 /* PageCollectionViewCell.h */,
+				FC63AA1F1B0B434200F5B3B0 /* PageCollectionViewCell.m */,
 			);
 			path = AWCollectionViewDialLayoutDemo;
 			sourceTree = "<group>";
@@ -202,6 +246,20 @@
 		71D04A4718D311340077B38B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				FC63AA211B0C7AAC00F5B3B0 /* bg_image.png */,
+				FC63AA221B0C7AAC00F5B3B0 /* bg_image@2x.png */,
+				FC63AA231B0C7AAC00F5B3B0 /* content_1.png */,
+				FC63AA241B0C7AAC00F5B3B0 /* content_1@2x.png */,
+				FC63AA251B0C7AAC00F5B3B0 /* content_2.png */,
+				FC63AA261B0C7AAC00F5B3B0 /* content_2@2x.png */,
+				FCC7592A1B0CB20B003E79FB /* gradientnew.png */,
+				FCC7592B1B0CB20B003E79FB /* gradientnew@2x.png */,
+				FC63AA271B0C7AAC00F5B3B0 /* content_3.png */,
+				FC63AA281B0C7AAC00F5B3B0 /* content_3@2x.png */,
+				FC63AA291B0C7AAC00F5B3B0 /* content_4.png */,
+				FC63AA2A1B0C7AAC00F5B3B0 /* content_4@2x.png */,
+				FC63AA2B1B0C7AAC00F5B3B0 /* content_5.png */,
+				FC63AA2C1B0C7AAC00F5B3B0 /* content_5@2x.png */,
 				71DD223A18D885F3005450FA /* awcollectionviewdiallayout_1.jpg */,
 				71DD223B18D885F3005450FA /* awcollectionviewdiallayout_2.jpg */,
 				71D04A4818D3114C0077B38B /* carmelo_anthony.png */,
@@ -213,6 +271,15 @@
 				71D04A4C18D3114C0077B38B /* paul_george.png */,
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		FC63AA171B0A0C2D00F5B3B0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FC63AA191B0A0C8300F5B3B0 /* Roboto-Regular.ttf */,
+				FC63AA181B0A0C6E00F5B3B0 /* Roboto-Bold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,16 +361,34 @@
 				71DD0C6218D31DD900152D0C /* kevin_durant.png in Resources */,
 				71D04A5118D3114C0077B38B /* paul_george.png in Resources */,
 				71DD223D18D885F3005450FA /* awcollectionviewdiallayout_2.jpg in Resources */,
+				FC63AA331B0C7AAC00F5B3B0 /* content_3.png in Resources */,
+				FC63AA381B0C7AAC00F5B3B0 /* content_5@2x.png in Resources */,
 				71D04A1E18D3068F0077B38B /* Main_iPad.storyboard in Resources */,
+				FC63AA1C1B0B3EF400F5B3B0 /* Roboto-Bold.ttf in Resources */,
 				71D04A4F18D3114C0077B38B /* kyrie_irving.png in Resources */,
+				FC15668F1B01E425008C3757 /* dialCell3.xib in Resources */,
+				FCC7592D1B0CB20B003E79FB /* gradientnew@2x.png in Resources */,
+				FC63AA301B0C7AAC00F5B3B0 /* content_1@2x.png in Resources */,
 				71DD0C6418D3540400152D0C /* iphone_settings_view.xib in Resources */,
 				71D04A5018D3114C0077B38B /* lebron_james.png in Resources */,
 				71D04A5318D315980077B38B /* james_harden.png in Resources */,
+				FC63AA2D1B0C7AAC00F5B3B0 /* bg_image.png in Resources */,
+				FC63AA341B0C7AAC00F5B3B0 /* content_3@2x.png in Resources */,
+				FC63AA351B0C7AAC00F5B3B0 /* content_4.png in Resources */,
+				FC63AA371B0C7AAC00F5B3B0 /* content_5.png in Resources */,
+				FC63AA2E1B0C7AAC00F5B3B0 /* bg_image@2x.png in Resources */,
 				71D04A4418D309C40077B38B /* dialCell.xib in Resources */,
+				FC63AA311B0C7AAC00F5B3B0 /* content_2.png in Resources */,
 				71D04A4E18D3114C0077B38B /* dwayne_wade.png in Resources */,
 				71D04A4618D311190077B38B /* players.json in Resources */,
+				FC63AA321B0C7AAC00F5B3B0 /* content_2@2x.png in Resources */,
+				FC63AA1B1B0B2F0700F5B3B0 /* pages.json in Resources */,
+				FCC7592C1B0CB20B003E79FB /* gradientnew.png in Resources */,
 				71D04A2318D3068F0077B38B /* Images.xcassets in Resources */,
+				FC63AA2F1B0C7AAC00F5B3B0 /* content_1.png in Resources */,
 				71DD223918D879A1005450FA /* dialCell2.xib in Resources */,
+				FC63AA1D1B0B3EFB00F5B3B0 /* Roboto-Regular.ttf in Resources */,
+				FC63AA361B0C7AAC00F5B3B0 /* content_4@2x.png in Resources */,
 				71DD223C18D885F3005450FA /* awcollectionviewdiallayout_1.jpg in Resources */,
 				71D04A1B18D3068F0077B38B /* Main_iPhone.storyboard in Resources */,
 				71D04A4D18D3114C0077B38B /* carmelo_anthony.png in Resources */,
@@ -330,6 +415,7 @@
 				71D04A1818D3068F0077B38B /* AppDelegate.m in Sources */,
 				71D04A1418D3068F0077B38B /* main.m in Sources */,
 				71D04A4218D306A30077B38B /* AWCollectionViewDialLayout.m in Sources */,
+				FC63AA201B0B434300F5B3B0 /* PageCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

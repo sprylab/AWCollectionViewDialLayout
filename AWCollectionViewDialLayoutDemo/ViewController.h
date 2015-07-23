@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate>
 
+@property (strong, nonatomic) IBOutlet UIView *backgroundView;
 @property (nonatomic, weak) IBOutlet UICollectionView *collectionView;
 @property (nonatomic, weak) IBOutlet UIBarButtonItem *editBtn;
 @property NSArray *items;

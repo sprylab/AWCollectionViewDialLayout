@@ -40,7 +40,7 @@
 
 - (void)setup
 {
-    self.offset = 0.0f;    
+    self.offset = 0.0f;
 }
 
 - (void)prepareLayout

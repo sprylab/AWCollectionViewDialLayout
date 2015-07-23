@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "AWCollectionViewDialLayout.h"
+#import "PageCollectionViewCell.h"
 
 @interface ViewController ()
 
@@ -15,7 +16,7 @@
 
 static NSString *cellId = @"cellId";
 static NSString *cellId2 = @"cellId2";
-
+static NSString *cellId3 = @"cellId3";
 
 @implementation ViewController{
     NSMutableDictionary *thumbnailCache;
@@ -41,12 +42,15 @@ static NSString *cellId2 = @"cellId2";
     type = 0;
     showingSettings = NO;
     
+    self.backgroundView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg_image.png"]];
+    
     [collectionView registerNib:[UINib nibWithNibName:@"dialCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:cellId];
     [collectionView registerNib:[UINib nibWithNibName:@"dialCell2" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:cellId2];
+    [collectionView registerNib:[UINib nibWithNibName:@"dialCell3" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:cellId3];
     
     
     NSError *error;
-    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"players" ofType:@"json"];
+    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"pages" ofType:@"json"];
     NSString *jsonString = [[NSString alloc] initWithContentsOfFile:jsonPath encoding:NSUTF8StringEncoding error:NULL];
     NSLog(@"jsonString:%@",jsonString);
     items = [NSJSONSerialization JSONObjectWithData:[jsonString dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:&error];
@@ -60,8 +64,8 @@ static NSString *cellId2 = @"cellId2";
     CGFloat radius = radiusSlider.value * 1000;
     CGFloat angularSpacing = angularSpacingSlider.value * 90;
     CGFloat xOffset = xOffsetSlider.value * 320;
-    CGFloat cell_width = 240;
-    CGFloat cell_height = 100;
+    CGFloat cell_width = 364;
+    CGFloat cell_height = 162;
     [radiusLabel setText:[NSString stringWithFormat:@"Radius: %i", (int)radius]];
     [angularSpacingLabel setText:[NSString stringWithFormat:@"Angular spacing: %i", (int)angularSpacing]];
     [xOffsetLabel setText:[NSString stringWithFormat:@"X offset: %i", (int)xOffset]];
@@ -70,7 +74,8 @@ static NSString *cellId2 = @"cellId2";
     
     dialLayout = [[AWCollectionViewDialLayout alloc] initWithRadius:radius andAngularSpacing:angularSpacing andCellSize:CGSizeMake(cell_width, cell_height) andAlignment:WHEELALIGNMENTCENTER andItemHeight:cell_height andXOffset:xOffset];
     [collectionView setCollectionViewLayout:dialLayout];
-
+    collectionView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"gradientnew.png"]];
+    
     [editBtn setTarget:self];
     [editBtn setAction:@selector(toggleSettingsView)];
     
@@ -107,20 +112,20 @@ static NSString *cellId2 = @"cellId2";
     CGFloat radius = 0 ,angularSpacing  = 0, xOffset = 0;
     
     if(type == 0){
-        [dialLayout setCellSize:CGSizeMake(240, 100)];
+        [dialLayout setCellSize:CGSizeMake(364, 162)];
         [dialLayout setWheelType:WHEELALIGNMENTLEFT];
         
-        radius = 300;
+        radius = 500;
         angularSpacing = 18;
-        xOffset = 70;
-    }else if(type == 1){
+        xOffset = 100;
+    }/*else if(type == 1){
         [dialLayout setCellSize:CGSizeMake(260, 50)];
         [dialLayout setWheelType:WHEELALIGNMENTCENTER];
         
         radius = 320;
         angularSpacing = 5;
         xOffset = 124;
-    }
+    }*/
     
     [radiusLabel setText:[NSString stringWithFormat:@"Radius: %i", (int)radius]];
     radiusSlider.value = radius/1000;
@@ -191,49 +196,53 @@ static NSString *cellId2 = @"cellId2";
 -(UICollectionViewCell *)collectionView:(UICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     UICollectionViewCell *cell;
     if(type == 0){
-        cell = [cv dequeueReusableCellWithReuseIdentifier:cellId forIndexPath:indexPath];
+        //cell = [cv dequeueReusableCellWithReuseIdentifier:cellId forIndexPath:indexPath];
+        cell = [cv dequeueReusableCellWithReuseIdentifier:cellId3 forIndexPath:indexPath];
     }else{
         cell = [cv dequeueReusableCellWithReuseIdentifier:cellId2 forIndexPath:indexPath];
     }
     
     NSDictionary *item = [self.items objectAtIndex:indexPath.item];
     
-    NSString *playerName = [item valueForKey:@"name"];
-    UILabel *nameLabel = (UILabel*)[cell viewWithTag:101];
-    [nameLabel setText:playerName];
+    NSString *subheadlineName = [item valueForKey:@"subheadline"];
+    NSString *headlineName = [item valueForKey:@"headline"];
+    NSString *descriptionText = [item valueForKey:@"description"];
+    UILabel *subheadline = (UILabel*)[cell viewWithTag:101];
+    UILabel *headline = (UILabel*)[cell viewWithTag:103];
+    UILabel *description = (UILabel*)[cell viewWithTag:104];
+    [subheadline setText:subheadlineName];
+    subheadline.font = [UIFont fontWithName:@"Roboto-Regular" size:18.0];
+    subheadline.textColor = [self colorFromHex:@"#ffffff"];
     
+    [headline setText:headlineName];
+    headline.font = [UIFont fontWithName:@"Roboto-Bold" size:22.0];
+    headline.textColor = [self colorFromHex:@"#ffffff"];
     
-    NSString *hexColor = [item valueForKey:@"team-color"];
+    [description setText:descriptionText];
+    description.font = [UIFont fontWithName:@"Roboto-Regular" size:18.0];
+    description.textColor = [self colorFromHex:@"#cccccc"];
     
+    // TODO: check content and resize label height and text container height
+    // cast cell to PageCollectionViewCell
     
-    if(type == 0){
-        UIView *borderView = [cell viewWithTag:102];
-        
-        borderView.layer.borderWidth = 1;
-        borderView.layer.borderColor = [self colorFromHex:hexColor].CGColor;
-        
-        NSString *imgURL = [item valueForKey:@"picture"];
-        UIImageView *imgView = (UIImageView*)[cell viewWithTag:100];
-        [imgView setImage:nil];
-        __block UIImage *imageProduct = [thumbnailCache objectForKey:imgURL];
-        if(imageProduct){
-            imgView.image = imageProduct;
-        }
-        else{
-            dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
-            dispatch_async(queue, ^{
-                UIImage *image = [UIImage imageNamed:imgURL];
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    imgView.image = image;
-                    [thumbnailCache setValue:image forKey:imgURL];
-                });
+
+    NSString *imgURL = [item valueForKey:@"picture"];
+    UIImageView *imgView = (UIImageView*)[cell viewWithTag:100];
+    [imgView setImage:nil];
+    __block UIImage *imageProduct = [thumbnailCache objectForKey:imgURL];
+    if(imageProduct){
+        imgView.image = imageProduct;
+    }
+    else{
+        dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
+        dispatch_async(queue, ^{
+            UIImage *image = [UIImage imageNamed:imgURL];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                imgView.image = image;
+                [thumbnailCache setValue:image forKey:imgURL];
             });
-        }
-        
-    }else{
-        nameLabel.textColor = [self colorFromHex:hexColor];
-    }    
-    
+        });
+    }
     
     return cell;
 }
@@ -246,7 +255,7 @@ static NSString *cellId2 = @"cellId2";
 #pragma mark - UICollectionViewDelegate methods
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CGSizeMake(240, 100);
+    return CGSizeMake(364, 162);
 }
 
 
