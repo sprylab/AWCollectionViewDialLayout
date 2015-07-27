@@ -2,6 +2,10 @@ AWCollectionViewDialLayout
 ==========================
 
 UICollectionViewLayout for displaying cells in a semi-circle with a nice fish eye effect.
+[![CI Status](http://img.shields.io/travis/Claus Weymann/AWCollectionViewDialLayout.svg?style=flat)](https://travis-ci.org/Claus Weymann/AWCollectionViewDialLayout)
+[![Version](https://img.shields.io/cocoapods/v/AWCollectionViewDialLayout.svg?style=flat)](http://cocoapods.org/pods/AWCollectionViewDialLayout)
+[![License](https://img.shields.io/cocoapods/l/AWCollectionViewDialLayout.svg?style=flat)](http://cocoapods.org/pods/AWCollectionViewDialLayout)
+[![Platform](https://img.shields.io/cocoapods/p/AWCollectionViewDialLayout.svg?style=flat)](http://cocoapods.org/pods/AWCollectionViewDialLayout)
 
 Very handy for quickly browsing items with your left thumb without having some of the content hidden behind your finger while you scroll.
 

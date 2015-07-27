@@ -1,0 +1,68 @@
+[
+ {
+ "subheadline": "Dachzeile",
+ "headline": "",
+ "description": "",
+ "picture" : "content_1.png"
+ },
+ {
+ "subheadline": "Dachzeile",
+ "headline": "Artikelzeile",
+ "description": "",
+ "picture" : "content_2.png"
+ },
+ {
+ "subheadline": "Dachzeile",
+ "headline": "Artikelzeile \nzweite Artikelzeile",
+ "description": "",
+ "picture" : "content_3.png"
+ },
+ {
+ "subheadline": "Dachzeile",
+ "headline": "Artikelzeile",
+ "description": "Lorem ipsum dolor sitam consetetur sadipscing.",
+ "picture" : "content_4.png"
+ },
+ {
+ "subheadline": "Dachzeile",
+ "headline": "Artikelzeile \nzweite Artikelzeile",
+ "description": "Lorem ipsum dolor sitam consetetur sadipscing.",
+ "picture" : "content_5.png"
+ },
+ {
+ "subheadline": "Dachzeile",
+ "headline": "",
+ "description": "Lorem ipsum dolor sitam consetetur sadipscing.",
+ "picture" : "content_1.png"
+ },
+ {
+ "subheadline": "",
+ "headline": "Artikelzeile",
+ "description": "",
+ "picture" : "content_2.png"
+ },
+ {
+ "subheadline": "",
+ "headline": "Artikelzeile \nzweite Artikelzeile",
+ "description": "",
+ "picture" : "content_3.png"
+ },
+ {
+ "subheadline": "",
+ "headline": "Artikelzeile",
+ "description": "Lorem ipsum dolor sitam consetetur sadipscing.",
+ "picture" : "content_4.png"
+ },
+ {
+ "subheadline": "",
+ "headline": "Artikelzeile \nzweite Artikelzeile",
+ "description": "Lorem ipsum dolor sitam consetetur sadipscing.",
+ "picture" : "content_5.png"
+ },
+ {
+ "subheadline": "",
+ "headline": "",
+ "description": "Lorem ipsum dolor sitam consetetur sadipscing.",
+ "picture" : "content_1.png"
+ }
+]
