@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
                        DESC
   s.homepage         = "https://github.com/sprylab/AWCollectionViewDialLayout"
   s.license          = 'MIT'
-  s.author           = { "Antoine Wette", "Claus Weymann" => "claus.weymann@sprylab.com" }
+  s.author           = { "Antoine Wette" => "", "Claus Weymann" => "claus.weymann@sprylab.com" }
   s.source           = { :git => "https://github.com/sprylab/AWCollectionViewDialLayout.git", :tag => s.version.to_s }
 
 
