@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>92C6213B-F5E9-4C3B-AA88-5651C496A590</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AWCollectionViewDialLayout</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3A21AA790FFECCE0A76588E9ACD8EBE9BE990D0E</key>
+		<string>https://github.com/sprylab/AWCollectionViewDialLayout.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Example/AWCollectionViewDialLayout.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3A21AA790FFECCE0A76588E9ACD8EBE9BE990D0E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/sprylab/AWCollectionViewDialLayout.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3A21AA790FFECCE0A76588E9ACD8EBE9BE990D0E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3A21AA790FFECCE0A76588E9ACD8EBE9BE990D0E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AWCollectionViewDialLayout</string>
+		</dict>
+	</array>
+</dict>
+</plist>
