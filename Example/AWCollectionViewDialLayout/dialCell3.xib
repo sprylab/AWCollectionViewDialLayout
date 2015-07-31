@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="cellId3" reuseIdentifier="cellId3" id="hkr-W7-kFa" customClass="PageCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="162"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="364" height="162"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view tag="102" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Hm-Vi-ctL">
+                        <rect key="frame" x="0.0" y="0.0" width="144" height="162"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UwS-7g-iff">
+                                <rect key="frame" x="0.0" y="0.0" width="124" height="162"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="imageView"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration" label="imageContainer"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="UwS-7g-iff" secondAttribute="bottom" id="20m-D5-vug"/>
+                            <constraint firstItem="UwS-7g-iff" firstAttribute="leading" secondItem="1Hm-Vi-ctL" secondAttribute="leading" id="XHy-Xb-ylM"/>
+                            <constraint firstAttribute="width" constant="144" id="jrD-Zz-L2M"/>
+                            <constraint firstItem="UwS-7g-iff" firstAttribute="top" secondItem="1Hm-Vi-ctL" secondAttribute="top" id="qsM-u2-vQ4"/>
+                            <constraint firstAttribute="trailing" secondItem="UwS-7g-iff" secondAttribute="trailing" constant="20" id="rRh-wv-TB1"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fRn-cc-VhN" userLabel="TextContainer">
+                        <rect key="frame" x="154" y="8" width="210" height="146"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dachzeile" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUf-E7-fLd">
+                                <rect key="frame" x="0.0" y="19" width="210" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="headline"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="rTS-Dm-VyI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="103" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artikelzeile Artikelzeile" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YhZ-dF-hHO">
+                                <rect key="frame" x="0.0" y="40" width="210" height="50"/>
+                                <accessibility key="accessibilityConfiguration" label="artikelLeine"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Wbp-Be-9B4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="22"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sitam  consetetur sadipscing." lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVs-MW-4Tz">
+                                <rect key="frame" x="0.0" y="90" width="210" height="61"/>
+                                <accessibility key="accessibilityConfiguration" label="description"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="D37-Mt-K2O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <accessibility key="accessibilityConfiguration" label="textContainer"/>
+                        <constraints>
+                            <constraint firstItem="mVs-MW-4Tz" firstAttribute="top" secondItem="YhZ-dF-hHO" secondAttribute="bottom" id="34u-kX-xhr"/>
+                            <constraint firstItem="IUf-E7-fLd" firstAttribute="top" secondItem="fRn-cc-VhN" secondAttribute="top" constant="19" id="9L1-GL-lA2"/>
+                            <constraint firstItem="YhZ-dF-hHO" firstAttribute="leading" secondItem="fRn-cc-VhN" secondAttribute="leading" id="BDO-v0-SIP"/>
+                            <constraint firstAttribute="trailing" secondItem="YhZ-dF-hHO" secondAttribute="trailing" id="Ddl-86-c1j"/>
+                            <constraint firstAttribute="height" constant="146" id="QxH-Eu-lGu"/>
+                            <constraint firstItem="YhZ-dF-hHO" firstAttribute="top" secondItem="IUf-E7-fLd" secondAttribute="bottom" id="Xay-uG-9Y9"/>
+                            <constraint firstAttribute="trailing" secondItem="mVs-MW-4Tz" secondAttribute="trailing" id="en0-pd-Seo"/>
+                            <constraint firstItem="mVs-MW-4Tz" firstAttribute="leading" secondItem="fRn-cc-VhN" secondAttribute="leading" id="fda-Hs-Q8q"/>
+                            <constraint firstAttribute="trailing" secondItem="IUf-E7-fLd" secondAttribute="trailing" id="ny0-Xi-upl"/>
+                            <constraint firstItem="IUf-E7-fLd" firstAttribute="leading" secondItem="fRn-cc-VhN" secondAttribute="leading" id="psc-Q6-tIx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="fRn-cc-VhN" firstAttribute="leading" secondItem="UwS-7g-iff" secondAttribute="trailing" constant="30" id="6Me-VR-wBe"/>
+                <constraint firstItem="1Hm-Vi-ctL" firstAttribute="leading" secondItem="hkr-W7-kFa" secondAttribute="leading" id="9Ls-Oa-pih"/>
+                <constraint firstAttribute="trailing" secondItem="fRn-cc-VhN" secondAttribute="trailing" id="apU-oV-F6i"/>
+                <constraint firstAttribute="centerY" secondItem="fRn-cc-VhN" secondAttribute="centerY" id="oKH-b7-wED"/>
+                <constraint firstItem="1Hm-Vi-ctL" firstAttribute="top" secondItem="hkr-W7-kFa" secondAttribute="top" id="pf2-TM-xiP"/>
+                <constraint firstAttribute="bottom" secondItem="1Hm-Vi-ctL" secondAttribute="bottom" id="zjY-Io-HFW"/>
+            </constraints>
+            <size key="customSize" width="157" height="188"/>
+            <connections>
+                <outlet property="descriptionHeight" destination="D37-Mt-K2O" id="qen-sm-9v5"/>
+                <outlet property="headlineHeight" destination="Wbp-Be-9B4" id="leC-Ii-9wO"/>
+                <outlet property="subheadlineHeight" destination="rTS-Dm-VyI" id="Csj-im-DlK"/>
+                <outlet property="textContainerHeight" destination="QxH-Eu-lGu" id="ktw-fJ-TFK"/>
+            </connections>
+            <point key="canvasLocation" x="362" y="160"/>
+        </collectionViewCell>
+    </objects>
+</document>
